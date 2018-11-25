@@ -1,0 +1,33 @@
+Installation Instructions
+*************************
+
+To install php-virt-control you need a webserver that
+supports PHP and also you have to have the libvirt-php
+module installed to your PHP (or php-libvirt if you're
+using Fedora). You can download the module directly from
+the official libvirt-php website at:
+
+http://libvirt.org/php
+
+or you can use yum to download and install it for you
+if you are using Fedora 14 or higher version. Both
+i386 and x86_64 versions are supported.
+
+If you have the libvirt-php module already loaded in your
+PHP configuration you can install either the RPM package
+provided or you can manually set your Apache/webserver
+configuration to point to the directory where you have
+copy of php-virt-control scripts located.
+
+Note: Fedora name is php-libvirt, and not libvirt-php so
+      to install the package you need to issue the
+      "yum install php-libvirt" command instead.
+
+Configuration
+*************
+
+The configuration for php-virt-control resides in
+/etc/php-virt-control/connection.php and optionally
+/etc/php-virt-control/mysql-connection.php files to
+define the database storage connection type with
+appropriate configuration.
